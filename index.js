@@ -3,11 +3,11 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     client.user.setActivity('bot en heroku', {type: 'WATCHING'});
-    console.log('Listo!');
+    console.log('Up and loaded!');
 });
 
 
-let prefix = process.env.PREFIX;
+let prefix = "$";
 
 client.on('message', message => {
     if (!message.content.startsWith(prefix) || !message.guild) return;
@@ -25,4 +25,5 @@ client.on('message', message => {
     }
 });
 
-client.login(process.env.TOKEN);
+//Carefull! Private token!
+client.login("NTMzNjk3OTk4MDgyMDE1MjQy.Dxu3nw.Ylck6jw6ILKIY2UCisoaTfgWYR4");
