@@ -1,0 +1,31 @@
+{
+  "name": "lionbot",
+  "version": "1.0.0",
+  "description": "LionHood+ Server Bot",
+  "main": "index.js",
+  "engines": {
+    "node": "11.6.x",
+    "npm": "6.5.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trekkar/Lionbot.git"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "Trekkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Trekkar/Lionbot/issues"
+  },
+  "homepage": "https://github.com/Trekkar/Lionbot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  },
+}
