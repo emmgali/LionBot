@@ -2,10 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-/*
+//WEB
 var express = require('express');
-
-Only for web endpoint purposes. Currently disabled.
 
 var app = express();
 const PORT = process.env.PORT || 5000
@@ -13,8 +11,13 @@ const PORT = process.env.PORT || 5000
 app.listen(PORT, function(){
     console.log('App escuchando!');
 })
-*/
 
+app.get('/wakeup', function(req, res){
+    res.send('The Lion has rised!');   
+})
+
+
+//DB
 const { Pool } = require('pg');
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
