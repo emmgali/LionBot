@@ -1,0 +1,20 @@
+-heroku ps: Muestra los Dyno corriendo (Bots online)
+
+-heroku logs --tail: Muestra los ultimos mensajes en consola de heroku. Bueno para ver la transcision de estados y eventuales errores al momento de pushear y compilar en la nube.
+
+-heroku ps:scale worker=1 : "Enciende" un Dyno con la instruccion worker. Settea el Bot prendido. Si se quiere apagar, cambiar el 1 por un 0.
+
+-heroku pg:psql : Entra a la consola de la base de datos asociada. Una vez entro, se interactua normalmente como en postgress.
+[Algunos comandos para usar en la consola de la bd:
+    \? list all the commands
+    \l list databases
+    \conninfo display information about current connection
+    \c [DBNAME] connect to new database, e.g., \c template1
+    \dt list tables
+    Then you can run SQL statements, e.g., SELECT * FROM my_table;(Note: a statement must be terminated with semicolon ;)
+    \q quit psql
+]
+
+-git push heroku master : Para pushear nueva version a heroku
+
+-heroku local: Para levantar la app local

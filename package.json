@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "LionHood+ Server Bot",
   "main": "index.js",
-  
   "engines": {
     "node": "11.6.x",
     "npm": "6.5.x"
   },
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
@@ -23,10 +21,10 @@
   ],
   "author": "Trekkar",
   "license": "MIT",
-  
   "homepage": "https://github.com/Trekkar/Lionbot#readme",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.4.2",
+    "pg": "^7.8.0"
   },
   "bugs": {
     "url": "https://github.com/Trekkar/Lionbot/issues"
