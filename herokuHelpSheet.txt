@@ -5,7 +5,7 @@
 -heroku ps:scale worker=1 : "Enciende" un Dyno con la instruccion worker. Settea el Bot prendido. Si se quiere apagar, cambiar el 1 por un 0.
 NOTA: el "worker" puede ser reemplazado por "web". Depende el servicio declarado en el Procfile.
 
--heroku pg:psql : Entra a la consola de la base de datos asociada. Una vez entro, se interactua normalmente como en postgress.
+-heroku pg:psql : Entra a la consola de la base de datos asociada. Una vez dentro, se interactua normalmente como en postgress.
 [Algunos comandos para usar en la consola de la bd:
     \? list all the commands
     \l list databases
@@ -16,6 +16,8 @@ NOTA: el "worker" puede ser reemplazado por "web". Depende el servicio declarado
     \q quit psql
 ]
 
--git push heroku master : Para pushear nueva version a heroku
+-(NOT NECESSARY. WHEN GIT REPO RECIVES A NEW PUSH, THE HEROKU APP REFRESHES AS WELL)git push heroku master : Para pushear nueva version a heroku
 
 -heroku local: Para levantar la app local
+
+-Informacion adicional para interactuar con discord, leer la documentacion de discord.js: https://discord.js.org/#/docs/main/stable/general/welcome
