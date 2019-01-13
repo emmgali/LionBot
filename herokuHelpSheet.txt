@@ -3,6 +3,7 @@
 -heroku logs --tail: Muestra los ultimos mensajes en consola de heroku. Bueno para ver la transcision de estados y eventuales errores al momento de pushear y compilar en la nube.
 
 -heroku ps:scale worker=1 : "Enciende" un Dyno con la instruccion worker. Settea el Bot prendido. Si se quiere apagar, cambiar el 1 por un 0.
+NOTA: el "worker" puede ser reemplazado por "web". Depende el servicio declarado en el Procfile.
 
 -heroku pg:psql : Entra a la consola de la base de datos asociada. Una vez entro, se interactua normalmente como en postgress.
 [Algunos comandos para usar en la consola de la bd:
